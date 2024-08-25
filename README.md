@@ -1,5 +1,6 @@
 #从单细胞矩阵开始运行 对TCGA进行预测
-'
+
+```
 library(data.table)
 library(tidyverse)
 library(tibble)
@@ -26,4 +27,4 @@ library(preprocessCore)
 closeAllConnections()
 #自定义运行函数  批量运行 加快速度
 tcga_dat_cib <- CIBERSORT_Parallel(sig_matrix = ref_cib,mixture_file = tcga_dat,perm = 100,absolute = F,num_cores = 50,parallel_doperm = parallel_doperm)
-'
+```
